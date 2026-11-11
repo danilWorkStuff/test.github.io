@@ -72,7 +72,7 @@ h1,h2,h3{font-weight:400;letter-spacing:-.04em}.loc b{font-weight:300}.row b{fon
 /* logo: framed mark from the base rule */
 .nav nav{margin:0 auto}.nav nav a{opacity:.8;font-size:14px}.nav .btn{min-height:46px;padding:0 20px;font-size:14px;letter-spacing:0;color:#fff;background:transparent;gap:12px;cursor:pointer;border:1px solid rgba(255,255,255,.8);border-radius:4px}.nav .btn:hover{background:#fff;color:#000}
 .hero{min-height:100svh;padding:0;display:block;position:relative;overflow:hidden;background:#0f0f0f}
-.hbg{position:absolute;top:0;right:0;bottom:0;width:72%;background-image:url(images/hero.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 46%);mask-image:linear-gradient(to right,transparent 0,#000 46%)}
+.hbg{position:absolute;top:0;right:0;bottom:0;width:66%;background-image:url(images/hero-axo.jpg);background-size:106%;background-position:76% 48%;background-repeat:no-repeat;filter:invert(1) grayscale(1) contrast(1.15) brightness(.92);mix-blend-mode:screen;opacity:.46;-webkit-mask-image:linear-gradient(to right,transparent,#000 40%);mask-image:linear-gradient(to right,transparent,#000 40%)}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,15,15,.55),transparent 28%,transparent 62%,rgba(15,15,15,.85));pointer-events:none}
 .hw{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding-top:150px;padding-bottom:max(32px,env(safe-area-inset-bottom,0px))}
 .hero h1{font-size:clamp(46px,8.2vw,132px);line-height:.98;margin:0 0 36px;max-width:none;font-weight:400;letter-spacing:-.045em}
@@ -82,13 +82,13 @@ h1,h2,h3{font-weight:400;letter-spacing:-.04em}.loc b{font-weight:300}.row b{fon
 .strip{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border:1px solid var(--line);background:rgba(15,15,15,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 .strip>div{padding:24px 28px;min-height:112px;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;border-left:1px solid var(--line)}.strip>div:first-child{border-left:0}
 .strip svg{width:28px;height:28px;margin-bottom:8px}.strip b{font-weight:400;font-size:clamp(19px,1.55vw,23px);line-height:1.15}.strip span{color:var(--fg2);font-size:clamp(14.5px,1.1vw,16px);margin-top:-2px;line-height:1.3}
-@media(max-width:860px){.hbg{position:absolute;top:0;right:0;bottom:0;width:72%;background-image:url(images/hero.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 46%);mask-image:linear-gradient(to right,transparent 0,#000 46%)}.strip{grid-template-columns:1fr 1fr}.strip>div:nth-child(3){border-left:0}.strip>div:nth-child(n+3){border-top:1px solid var(--line)}.hw{padding-top:120px}.nav nav{display:none}.nav .btn{margin-left:auto}.hloc{margin-top:32px}}
+@media(max-width:860px){.hbg{position:absolute;top:0;right:0;bottom:0;width:66%;background-image:url(images/hero-axo.jpg);background-size:106%;background-position:76% 48%;background-repeat:no-repeat;filter:invert(1) grayscale(1) contrast(1.15) brightness(.92);mix-blend-mode:screen;opacity:.46;-webkit-mask-image:linear-gradient(to right,transparent,#000 40%);mask-image:linear-gradient(to right,transparent,#000 40%)}.strip{grid-template-columns:1fr 1fr}.strip>div:nth-child(3){border-left:0}.strip>div:nth-child(n+3){border-top:1px solid var(--line)}.hw{padding-top:120px}.nav nav{display:none}.nav .btn{margin-left:auto}.hloc{margin-top:32px}}
 
 .loc div{display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-items:center;align-content:center}.loc b,.loc span{grid-column:2}
 @keyframes up{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes bgin{from{opacity:0;transform:scale(1.07)}to{opacity:1;transform:none}}
-.nav{animation:fade 1.2s ease both}.hbg{position:absolute;top:0;right:0;bottom:0;width:72%;background-image:url(images/hero.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 46%);mask-image:linear-gradient(to right,transparent 0,#000 46%)}
+.nav{animation:fade 1.2s ease both}.hbg{position:absolute;top:0;right:0;bottom:0;width:66%;background-image:url(images/hero-axo.jpg);background-size:106%;background-position:76% 48%;background-repeat:no-repeat;filter:invert(1) grayscale(1) contrast(1.15) brightness(.92);mix-blend-mode:screen;opacity:.46;-webkit-mask-image:linear-gradient(to right,transparent,#000 40%);mask-image:linear-gradient(to right,transparent,#000 40%)}
 .hero h1,.hero .lede,.hloc{animation:up 1.2s var(--ease) both}.hero h1{animation-delay:.15s}.hero .lede{animation-delay:.4s}.hloc{animation-delay:.55s}
 .strip>div{animation:stripIn .55s var(--ease) both}.strip>div:nth-child(1){animation-delay:.2s}.strip>div:nth-child(2){animation-delay:.45s}.strip>div:nth-child(3){animation-delay:.7s}.strip>div:nth-child(4){animation-delay:.95s}
 @keyframes stripIn{from{opacity:0;transform:translateY(32px) scale(.985)}60%{opacity:1}to{opacity:1;transform:none}}
@@ -212,3 +212,4 @@ body.doc-page{background:#fff}
 /* document pages: final overrides (source order wins over equal-specificity base rules) */
 .doc-page .nav nav{margin-left:auto;margin-right:0}
 .doc-page .lit.in{background-position:0 0}
+@media(max-width:860px){.hbg{display:none}}
